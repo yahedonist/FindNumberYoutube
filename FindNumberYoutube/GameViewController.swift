@@ -110,7 +110,7 @@ class GameViewController: UIViewController {
   private func showAlertActionSheet(){
     let alert = UIAlertController(title: "What do you want?", message: nil, preferredStyle: .actionSheet)
     let newGameAction = UIAlertAction(title: "Start new game", style: .default) { [weak self] (_) in
-      self?.game.newGame() 
+      self?.game.newGame()
       self?.setupScreen()
     }
     
